@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Kartların yan yana dizilmesi için container */
+        .cards {
+            display: flex;
+            gap: 15px; 
+            padding: 20px;
+        }
+
+        /* Kartın ana kutusu */
+        .card {
+            width: 300px; 
+            border: 1px solid orangered;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Resmin kutuyu kaplaması için */
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid black;
+        }
+
+        
+        .head {
+            padding: 5px 10px;
+        }
+
+     .head a {
+            color: red;
+            text-decoration: underline;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .content {
+            padding: 10px;
+            font-size: 12px;
+            color: darkgreen;
+            flex-grow: 1; /* Metin az olsa da kutunun dolgun görünmesini sağlar */
+        }
+
+        
+        .head a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cards">
+        <div class="card">
+            <img src="kedi.jpeg" alt="Kedi"> 
+            <div class="head">
+                <a href="https://tr.wikipedia.org/wiki/Kedi">CUTE CATS</a>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, reprehenderit.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="kedi.jpeg" alt="Kedi"> 
+            <div class="head">
+                <a href="https://tr.wikipedia.org/wiki/Kedi">CUTE CATS</a>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, reprehenderit.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="kedi.jpeg" alt="Kedi"> 
+            <div class="head">
+                <a href="https://tr.wikipedia.org/wiki/Kedi">CUTE CATS</a>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, reprehenderit.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
